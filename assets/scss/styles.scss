@@ -1,5 +1,26 @@
 .col{
     border: solid 1px black;
     text-align: center;
-    text-decoration: none;
+    a{
+        text-decoration: none;
+    } 
 } 
+
+.contenido{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70vh;
+    .imgp1{
+        width: auto;
+        padding: 5%;
+    }
+
+    .card{
+        width: 30%;
+        height: 90%;
+    }
+}
+
+.combina{
+    flex-direction: column;
+}
