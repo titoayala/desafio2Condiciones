@@ -2,35 +2,24 @@
   border: solid 1px black;
   text-align: center;
 }
-
 .col a {
   text-decoration: none;
 }
 
 .contenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   height: 70vh;
 }
-
 .contenido .imgp1 {
   width: auto;
   padding: 5%;
 }
-
 .contenido .card {
   width: 30%;
   height: 90%;
 }
 
 .combina {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-/*# sourceMappingURL=styles.css.map */
