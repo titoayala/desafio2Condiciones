@@ -37,16 +37,18 @@ function parte2Suma() {
 //PARTE 3
 function parte3verifica() {
 
+    const pass1 = 911;
+    const pass2 = 714;
     let respuesta = document.querySelector(".respuesta");
     let digito1 = document.getElementById('selector1').value; //NO SE NECESITA CAMBIAR TIPO DE DATOS A NUMERICO. CON STRING FUNCIONA!
     let digito2 = document.getElementById('selector2').value;
     let digito3 = document.getElementById('selector3').value;
     let clave = digito1 + digito2 + digito3; // SE CONCATENAN LOS STRING, NO SE SUMAN PORQUE NO SON TIPO INT.!!!
 
-    if (clave == 911) {
+    if (clave == pass1) {
         respuesta.innerHTML = 'Password 1 correcto';
     }
-    else if (clave == 714) {
+    else if (clave == pass2) {
         respuesta.innerHTML = 'Password 2 correcto';
     } else {
         respuesta.innerHTML = 'Password incorrecto';
