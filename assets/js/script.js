@@ -1,3 +1,8 @@
+// SCRIPT PARA LAS TRES PARTES. CADA FUNCION CORRESPONDE A UNA PARTE DEL DESAFIO
+// SE DECLARAN LAS VARIABLES DENTRO DE CADA FUNCION PARA QUE NO SEAN GLOBALES!!!
+
+
+// PARTE 1
 function cambiaBorde() {
     console.log("llamado a función Parte 1...");
     const imagen = document.querySelector(".imgp1");
@@ -7,3 +12,26 @@ function cambiaBorde() {
         imagen.style.border = "solid 2px red";
     }
 }
+
+
+// PARTE 2
+function parte2Suma(){
+    console.log("llamado a función Parte 2...");
+    let respuesta = document.querySelector(".respuesta");
+    let qs1=parseInt(document.getElementById('qstick1').value) || 0; //SI EL USUARIO NO SELECCIONA NINGUN STICKER, EL VALOR DE LA VARIABLE SERA 0 POR DEFECTO.
+    let qs2=parseInt(document.getElementById('qstick2').value) || 0;
+    let qs3=parseInt(document.getElementById('qstick3').value) || 0;
+    let suma=qs1+qs2+qs3;
+
+    if (qs1 < 0 || qs2 < 0 || qs3 < 0){ //CONDICION PARA NO PERMITIR VALORES NEGATIVOS!!!
+        respuesta.innerHTML='No se permiten valores negativos';
+    }
+    else if (suma <=10) {
+        respuesta.innerHTML=`Llevas ${suma} Stickers`; 
+    }
+    else  {
+        respuesta.innerHTML='Llevas demasiados Stickers'; 
+    }
+
+
+    }
